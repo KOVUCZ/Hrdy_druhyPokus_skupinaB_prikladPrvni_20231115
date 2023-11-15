@@ -44,5 +44,31 @@ namespace Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115
 
             }
         }
+
+        private void CalculateClick_Click(object sender, RoutedEventArgs e)
+        {
+            double r, a;
+            double obsah;
+
+            try
+            {
+                if(selector.SelectedIndex == 0)
+                {
+                    r = double.Parse(Input_r.Text);
+                    obsah = ((4 / 3) * Math.PI * (r * r));
+                    Output.Content = $"Obsah koule činí {obsah} jednotek krychlových";
+                }
+                else
+                {
+                    a = double.Parse(Input_a.Text);
+                    obsah = (a * a * a);
+                    Output.Content = $"Obsah kvádru činí {obsah} jednotek krychlových";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Zadejte správnou hodnotu prosím!");
+            }
+        }
     }
 }

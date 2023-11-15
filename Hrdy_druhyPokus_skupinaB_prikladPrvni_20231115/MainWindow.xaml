@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="820">
     <Grid x:Name="Rectangle">
         <Label Content="KALKULAČKA OBSAHU" HorizontalAlignment="Center" Height="74" Margin="0,27,0,0" VerticalAlignment="Top" Width="532" FontWeight="Bold" FontSize="48" />
         <ComboBox Name="selector" HorizontalAlignment="Left" Height="42" Margin="213,107,0,0" VerticalAlignment="Top" Width="136" SelectionChanged="selector_SelectionChanged">
@@ -15,10 +15,10 @@
         <Label Content="Co chcete počítat?" HorizontalAlignment="Left" Height="41" Margin="38,107,0,0" VerticalAlignment="Top" Width="146" FontSize="16" FontWeight="Bold"/>
         <Label Content="    r=" HorizontalAlignment="Left" Margin="123,178,0,0" VerticalAlignment="Top" Height="39" Width="61" FontWeight="Bold" FontSize="22" Name="LabelInput_r"/>
         <Label Content="    a=" HorizontalAlignment="Left" Margin="123,232,0,0" VerticalAlignment="Top" Height="39" Width="61" FontWeight="Bold" FontSize="22" Name="LabelInput_a"/>
-        <TextBox x:Name="Input_r" HorizontalAlignment="Left" Height="39" Margin="213,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
-        <TextBox x:Name="Input_a" HorizontalAlignment="Left" Height="39" Margin="213,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
-        <Button Content="Spočítej!" HorizontalAlignment="Left" Height="44" Margin="154,304,0,0" VerticalAlignment="Top" Width="195" FontSize="24" Background="#FFA09797" Foreground="#FF4EFF00"/>
-        <Label Content="Výsledek" Name="Output" HorizontalAlignment="Left" Height="241" Margin="400,107,0,0" VerticalAlignment="Top" Width="266" Background="#FF737373" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="Input_r" HorizontalAlignment="Left" Height="39" Margin="213,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="Input_a" HorizontalAlignment="Left" Height="39" Margin="213,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Button Content="Spočítej!" Name="CalculateClick" HorizontalAlignment="Left" Height="44" Margin="154,304,0,0" VerticalAlignment="Top" Width="195" FontSize="24" Background="#FFA09797" Foreground="#FF4EFF00" Click="CalculateClick_Click"/>
+        <Label Content="Výsledek" Name="Output" HorizontalAlignment="Left" Height="241" Margin="375,107,0,0" VerticalAlignment="Top" Width="415" Background="#FF737373" FontWeight="Bold" FontSize="20"/>
         <Label Content="NÁVOD: Nastavte si požadovaný objekt který chcete spočítat, zadejte hodnotu a klikněte na tlačítko Spočítej!" Name="InstructionLabel"  HorizontalAlignment="Center" Height="57" Margin="0,367,0,0" VerticalAlignment="Top" Width="780" Foreground="Red" FontWeight="Bold" FontSize="15"/>
 
 
