@@ -15,7 +15,7 @@
         <Label Content="Co chcete počítat?" HorizontalAlignment="Left" Height="41" Margin="38,107,0,0" VerticalAlignment="Top" Width="146" FontSize="16" FontWeight="Bold"/>
         <Label Content="    r=" HorizontalAlignment="Left" Margin="123,178,0,0" VerticalAlignment="Top" Height="39" Width="61" FontWeight="Bold" FontSize="22" Name="LabelInput_r"/>
         <Label Content="    a=" HorizontalAlignment="Left" Margin="123,232,0,0" VerticalAlignment="Top" Height="39" Width="61" FontWeight="Bold" FontSize="22" Name="LabelInput_a"/>
-        <TextBox Name="Input_r" HorizontalAlignment="Left" Height="39" Margin="213,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="Input_r" HorizontalAlignment="Left" Height="39" Margin="213,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
         <TextBox x:Name="Input_a" HorizontalAlignment="Left" Height="39" Margin="213,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
         <Button Content="Spočítej!" HorizontalAlignment="Left" Height="44" Margin="154,304,0,0" VerticalAlignment="Top" Width="195" FontSize="24" Background="#FFA09797" Foreground="#FF4EFF00"/>
         <Label Content="Výsledek" Name="Output" HorizontalAlignment="Left" Height="241" Margin="400,107,0,0" VerticalAlignment="Top" Width="266" Background="#FF737373" FontWeight="Bold" FontSize="20"/>
