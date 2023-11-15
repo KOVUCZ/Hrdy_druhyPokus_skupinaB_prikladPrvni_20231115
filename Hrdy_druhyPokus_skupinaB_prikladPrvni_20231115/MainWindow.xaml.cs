@@ -23,6 +23,26 @@ namespace Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115
         public MainWindow()
         {
             InitializeComponent();
+            selector.SelectedIndex = 0;
+        }
+
+        private void selector_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(selector.SelectedIndex == 0) //koule
+            {
+                Input_r.Visibility = Visibility.Visible;
+                LabelInput_r.Visibility = Visibility.Visible;
+                Input_a.Visibility = Visibility.Hidden;
+                LabelInput_a.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                Input_r.Visibility = Visibility.Hidden;
+                LabelInput_r.Visibility= Visibility.Hidden;
+                Input_a.Visibility = Visibility.Visible;
+                LabelInput_a.Visibility = Visibility.Visible;
+
+            }
         }
     }
 }
