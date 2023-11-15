@@ -55,8 +55,8 @@ namespace Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115
                 if(selector.SelectedIndex == 0) //koule
                 {
                     r = double.Parse(Input_r.Text);
-                    obsah = ((4 / 3) * Math.PI * (r * r));
-                    Output.Content = $"Obsah koule činí {obsah} jednotek krychlových"; //aktuálně počítá všelijak..... jen ne dobře >:c 
+                    obsah = Math.Round ((4.0 / 3.0) * Math.PI * (r * r));
+                    Output.Content = $"Obsah koule činí {obsah} jednotek krychlových"; 
                 }
                 else
                 {
