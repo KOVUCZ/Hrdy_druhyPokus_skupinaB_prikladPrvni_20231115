@@ -52,22 +52,22 @@ namespace Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115
 
             try
             {
-                if(selector.SelectedIndex == 0)
+                if(selector.SelectedIndex == 0) //koule
                 {
                     r = double.Parse(Input_r.Text);
                     obsah = ((4 / 3) * Math.PI * (r * r));
-                    Output.Content = $"Obsah koule činí {obsah} jednotek krychlových";
+                    Output.Content = $"Obsah koule činí {obsah} jednotek krychlových"; //aktuálně počítá všelijak..... jen ne dobře >:c 
                 }
                 else
                 {
-                    a = double.Parse(Input_a.Text);
+                    a = double.Parse(Input_a.Text); //kvádr
                     obsah = (a * a * a);
                     Output.Content = $"Obsah kvádru činí {obsah} jednotek krychlových";
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Zadejte správnou hodnotu prosím! Zadávejte pouze čísla!");
+                MessageBox.Show($"Zadejte správnou hodnotu prosím! Zadávejte pouze čísla!"); //zobrazí se v případě že je zadáno cokoliv jiného než číslo
             }
         }
     }
