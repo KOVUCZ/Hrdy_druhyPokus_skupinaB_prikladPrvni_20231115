@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="820">
+        Title="Kalkulačka obsahu | druhý pokus testu - 15. listopadu 2023 | Autor: Adam Hrdý" Height="450" Width="820">
     <Grid x:Name="Rectangle">
         <Label Content="KALKULAČKA OBSAHU" HorizontalAlignment="Center" Height="74" Margin="0,27,0,0" VerticalAlignment="Top" Width="532" FontWeight="Bold" FontSize="48" />
         <ComboBox Name="selector" HorizontalAlignment="Left" Height="42" Margin="213,107,0,0" VerticalAlignment="Top" Width="136" SelectionChanged="selector_SelectionChanged">

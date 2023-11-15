@@ -67,7 +67,7 @@ namespace Hrdy_druhyPokus_skupinaB_prikladPrvni_20231115
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Zadejte správnou hodnotu prosím!");
+                MessageBox.Show($"Zadejte správnou hodnotu prosím! Zadávejte pouze čísla!");
             }
         }
     }
